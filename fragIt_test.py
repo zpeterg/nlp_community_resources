@@ -1,5 +1,5 @@
 import unittest
-from fragment import fragIt
+from fragIt import fragIt
 
 sent = "The Raven. It's by Edgar Allan Poe. Once upon a midnight dreary, while..."
 res = ['The', 'Raven', '.', 'It', "'s", 'by', 'Edgar', 'Allan', 'Poe', '.', 'Once', 'upon', 'a', 'midnight', 'dreary', ',', 'while', '...']

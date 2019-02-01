@@ -3,7 +3,7 @@ from similarity import similarity
 
 
 class TestSynomize(unittest.TestCase):
-    def test_similarity(self):
+    def test_sim(self):
         arr = ['dozen', 'cat']
         synoArr = [
             {'cat', 'lion', 'tiger'},
