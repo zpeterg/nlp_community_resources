@@ -8,11 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48931b6b-f097-4533-9ab1-4aec3cef3b97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cleanIt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cleanIt_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fragment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fragment_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/similarity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/similarity_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/synomize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/synomize_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanIt.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleanIt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanIt_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleanIt_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,16 +23,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/nlp_community_resources$Unittests_for_cleanIt_test_TestCleanIt.coverage" NAME="Unittests for cleanIt_test.TestCleanIt Coverage Results" MODIFIED="1548995368570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nlp_community_resources$Unittests_for_cleanIt_test_TestCleanIt.coverage" NAME="Unittests for cleanIt_test.TestCleanIt Coverage Results" MODIFIED="1549055737305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nlp_community_resources$Unittests_for_similarity_test_TestSynomize.coverage" NAME="Unittests for similarity_test.TestSynomize Coverage Results" MODIFIED="1549061771811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nlp_community_resources$Unittests_for_fragment_test_TestFragment.coverage" NAME="Unittests for fragment_test.TestFragment Coverage Results" MODIFIED="1548995359670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fragment_test.py">
+        <entry file="file://$PROJECT_DIR$/similarity_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="153">
+              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -53,18 +56,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cleanIt_test.py" />
         <option value="$PROJECT_DIR$/fragment.py" />
-        <option value="$PROJECT_DIR$/cleanIt.py" />
         <option value="$PROJECT_DIR$/fragment_test.py" />
+        <option value="$PROJECT_DIR$/synomize.py" />
+        <option value="$PROJECT_DIR$/cleanIt_test.py" />
+        <option value="$PROJECT_DIR$/cleanIt.py" />
+        <option value="$PROJECT_DIR$/synomize_test.py" />
+        <option value="$PROJECT_DIR$/similarity.py" />
+        <option value="$PROJECT_DIR$/similarity_test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-15" />
-    <option name="y" value="-15" />
-    <option name="width" value="3875" />
-    <option name="height" value="2195" />
+    <option name="width" value="1948" />
+    <option name="height" value="2075" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -116,7 +122,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for cleanIt_test.TestCleanIt">
+  <component name="RunManager" selected="Python tests.Unittests for similarity_test.TestSynomize">
     <configuration name="Unittests for cleanIt_test.TestCleanIt" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="nlp_community_resources" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,8 +153,24 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for similarity_test.TestSynomize" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="nlp_community_resources" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;similarity_test.TestSynomize&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for similarity_test.TestSynomize" />
         <item itemvalue="Python tests.Unittests for cleanIt_test.TestCleanIt" />
         <item itemvalue="Python tests.Unittests for fragment_test.TestFragment" />
       </list>
@@ -164,20 +186,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548992283574</updated>
-      <workItem from="1548992285058" duration="3067000" />
+      <workItem from="1548992285058" duration="9886000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_fragment_test_TestFragment - 2019.01.31 at 22h 25m 13s.xml">
-      <configuration name="Unittests for fragment_test.TestFragment" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_fragment_test_TestFragment - 2019.01.31 at 22h 25m 27s.xml">
-      <configuration name="Unittests for fragment_test.TestFragment" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_fragment_test_TestFragment - 2019.01.31 at 22h 26m 01s.xml">
-      <configuration name="Unittests for fragment_test.TestFragment" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_fragment_test_TestFragment - 2019.01.31 at 22h 26m 10s.xml">
       <configuration name="Unittests for fragment_test.TestFragment" configurationId="tests" />
     </history-entry>
@@ -199,26 +212,35 @@
     <history-entry file="Unittests_for_cleanIt_test_TestCleanIt - 2019.01.31 at 22h 28m 02s.xml">
       <configuration name="Unittests for cleanIt_test.TestCleanIt" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_fragment_test_TestFragment - 2019.01.31 at 22h 29m 20s.xml">
+      <configuration name="Unittests for fragment_test.TestFragment" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_cleanIt_test_TestCleanIt - 2019.01.31 at 22h 29m 29s.xml">
+      <configuration name="Unittests for cleanIt_test.TestCleanIt" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_cleanIt_test_TestCleanIt - 2019.02.01 at 15h 15m 38s.xml">
+      <configuration name="Unittests for cleanIt_test.TestCleanIt" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3067000" />
+    <option name="totallyTimeSpent" value="9886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24949698" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22132796" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Python Console" weight="0.32956153" />
+      <window_info anchor="bottom" id="Terminal" weight="0.33285713" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4483734" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44714287" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -234,34 +256,68 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cleanIt.py">
+    <entry file="file://$PROJECT_DIR$/fragment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanIt_test.py">
+    <entry file="file://$PROJECT_DIR$/fragment_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="59" lean-forward="true" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+        <state relative-caret-position="68">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fragment.py">
+    <entry file="file://$PROJECT_DIR$/cleanIt_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="119">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fragment_test.py">
+    <entry file="file://$PROJECT_DIR$/cleanIt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/synomize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="37" lean-forward="true" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/synomize_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="27" lean-forward="true" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similarity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similarity_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

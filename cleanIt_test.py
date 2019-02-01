@@ -5,6 +5,6 @@ class TestCleanIt(unittest.TestCase):
 
     def test_clean(self):
         arr = ['The', 'fish', "don't", 'taste', 'like', 'a', 'dozen', 'cats']
-        resArr = ['the', 'fish', "don't", 'taste', 'like', 'a', 'dozen', 'cats']
-        self.assertEqual(cleanIt(arr), resArr)
+        resArr = ['fish', 'taste', 'like', 'dozen', 'cat']
+        self.assertEqual(resArr, cleanIt(arr))
 
