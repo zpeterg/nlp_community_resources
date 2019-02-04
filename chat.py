@@ -1,4 +1,4 @@
-
+from parsePhrase import parsePhrase
 
 class Chat:
     def __init__(self, resources, subject):
@@ -16,6 +16,8 @@ class Chat:
                 new_item = {
                     "subject": subject,
                 }
+                if 'keywords' in item:
+                    new_item['keywords'] = item['keywords']
                 if 'phrase' in item:
                     new_item['phrase'] = item['phrase']
                 if 'options' in item:
@@ -33,8 +35,28 @@ class Chat:
         loop(self.resources, ())
         self.flattened = rtn
 
-    def match(self, searchStr):
-        print('subject------', self.subject)
-        sub_resource = next(i for i in self.flattened if ''.join(i['subject']) == ''.join(self.subject))
-        ################### todo: add the search within sub_resources using searchStr and parsePhrase()
-        return sub_resource
+    def match(self, search_str):
+        all_matching = []
+        for item in self.flattened:
+            # Merge subjects into strings, and look to see if the subject sought is in this item's subject
+            if ''.join(self.subject) in ''.join(item['subject']):
+                all_matching.append(item)
+
+        # Return "none" if nothing matches
+        # todo: add a backup here or elsewhere that tries to find other subjects that partially match with parsePhrase()
+        if len(all_matching) == 0:
+            return None
+        # Only a single item matches (no children)
+        if len(all_matching) == 1:
+            return all_matching[0]
+
+        highest_similarity = 0
+        highest_similarity_item = all_matching[0]
+        for item in all_matching:
+            # parsePhrase() returns something like {'count': 2, 'similarity': 3}
+            sim = parsePhrase(item['subject'], search_str)
+            if highest_similarity < sim['count']:
+                highest_similarity_item = item
+                highest_similarity = sim['count']
+
+        return highest_similarity_item
