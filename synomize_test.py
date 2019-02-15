@@ -1,5 +1,5 @@
 import unittest
-from synomize import synomize
+from synomize import spell_suggest, synomize
 
 
 class TestSynomize(unittest.TestCase):
@@ -22,3 +22,15 @@ class TestSynomize(unittest.TestCase):
         ]
         self.assertEqual(res, synomize(arr))
 
+    def test_spell_suggest(self):
+        words = ['something', 'is', 'hapenning', 'here']
+        res = ('something', 'is', 'henning', 'happening', 'penning', 'here')
+        self.assertEqual(res, spell_suggest(words))
+
+    def test_spelling_and_synomize(self):
+        arr = ['fishys']
+        res = [
+            {'fishy', 'suspicious', 'shady', 'suspect', 'funny'},
+            {'Fish', 'fishes', 'Pisces_the_Fishes', 'angle', 'fish', 'Pisces'},
+        ]
+        self.assertEqual(res, synomize(arr))

@@ -2,8 +2,8 @@ import unittest
 from similarity import similarity
 
 
-class TestSynomize(unittest.TestCase):
-    def test_sim(self):
+class TestSimilarity(unittest.TestCase):
+    def test_similar(self):
         arr = ['dozen', 'cat']
         synoArr = [
             {'cat', 'lion', 'tiger'},
@@ -12,4 +12,3 @@ class TestSynomize(unittest.TestCase):
         ]
         res = 2
         self.assertEqual(res, similarity(arr, synoArr))
-

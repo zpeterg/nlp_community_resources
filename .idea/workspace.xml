@@ -2,14 +2,16 @@
 <project version="4">
   <component name="AutoTestManager">
     <enabled-run-configurations>
-      <run-configuration type="tests" name="Rerun Failed Tests" />
       <run-configuration type="tests" name="Unittests for fragIt_test.TestFragment" />
     </enabled-run-configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48931b6b-f097-4533-9ab1-4aec3cef3b97" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/similarity_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/similarity_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/synomize.py" beforeDir="false" afterPath="$PROJECT_DIR$/synomize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/synomize_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/synomize_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +20,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/nlp_community_resources$Unittests_for_synomize_test_TestSynomize_test_spelling_and_synomize.coverage" NAME="Unittests for synomize_test.TestSynomize.test_spelling_and_synomize Coverage Results" MODIFIED="1550200397739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nlp_community_resources$Unittests_for_chat_test_TestChat_test_chat_match.coverage" NAME="Unittests for chat_test.TestChat.test_chat_match Coverage Results" MODIFIED="1549749430000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nlp_community_resources$Unittests_for_cleanIt_test_TestCleanIt.coverage" NAME="Unittests for cleanIt_test.TestCleanIt Coverage Results" MODIFIED="1549055737305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nlp_community_resources$Unittests_for_similarity_test_TestSynomize.coverage" NAME="Unittests for similarity_test.TestSynomize Coverage Results" MODIFIED="1549061771811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nlp_community_resources$Unittests_for_fragment_test_TestFragment.coverage" NAME="Unittests for fragment_test.TestFragment Coverage Results" MODIFIED="1548995359670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -25,10 +29,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chat.py">
+        <entry file="file://$PROJECT_DIR$/synomize_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+            <state relative-caret-position="442">
+              <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,6 +55,10 @@
       <find>.resourc</find>
       <find>anger</find>
       <find>subject--</find>
+      <find>syno</find>
+      <find>synomize</find>
+      <find>synomize(</find>
+      <find>except</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -58,27 +69,27 @@
       <list>
         <option value="$PROJECT_DIR$/fragment.py" />
         <option value="$PROJECT_DIR$/fragment_test.py" />
-        <option value="$PROJECT_DIR$/synomize.py" />
         <option value="$PROJECT_DIR$/cleanIt_test.py" />
         <option value="$PROJECT_DIR$/cleanIt.py" />
-        <option value="$PROJECT_DIR$/synomize_test.py" />
-        <option value="$PROJECT_DIR$/similarity.py" />
         <option value="$PROJECT_DIR$/index.py" />
-        <option value="$PROJECT_DIR$/similarity_test.py" />
         <option value="$PROJECT_DIR$/index_test.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/parsePhrase.py" />
         <option value="$PROJECT_DIR$/parsePhrase_test.py" />
         <option value="$PROJECT_DIR$/resources.py" />
         <option value="$PROJECT_DIR$/chat.py" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/chat_test.py" />
+        <option value="$PROJECT_DIR$/similarity.py" />
+        <option value="$PROJECT_DIR$/similarity_test.py" />
+        <option value="$PROJECT_DIR$/parsePhrase.py" />
+        <option value="$PROJECT_DIR$/synomize.py" />
+        <option value="$PROJECT_DIR$/synomize_test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-15" />
-    <option name="width" value="1948" />
-    <option name="height" value="2075" />
+    <option name="x" value="-14" />
+    <option name="width" value="1367" />
+    <option name="height" value="1456" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -93,10 +104,6 @@
               <item name="nlp_community_resources" type="b2602c69:ProjectViewProjectNode" />
               <item name="nlp_community_resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="nlp_community_resources" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -108,7 +115,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -130,7 +137,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for similarity_test.TestSynomize">
+  <component name="RunManager" selected="Python tests.Unittests for synomize_test.TestSynomize.test_spelling_and_synomize">
+    <configuration name="Unittests for chat_test.TestChat.test_chat_match" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="nlp_community_resources" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;chat_test.TestChat.test_chat_match&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests for cleanIt_test.TestCleanIt" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="nlp_community_resources" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,8 +198,25 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for synomize_test.TestSynomize.test_spelling_and_synomize" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="nlp_community_resources" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;synomize_test.TestSynomize.test_spelling_and_synomize&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for synomize_test.TestSynomize.test_spelling_and_synomize" />
+        <item itemvalue="Python tests.Unittests for chat_test.TestChat.test_chat_match" />
         <item itemvalue="Python tests.Unittests for similarity_test.TestSynomize" />
         <item itemvalue="Python tests.Unittests for cleanIt_test.TestCleanIt" />
         <item itemvalue="Python tests.Unittests for fragIt_test.TestFragment" />
@@ -194,7 +233,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548992283574</updated>
-      <workItem from="1548992285058" duration="22693000" />
+      <workItem from="1548992285058" duration="23462000" />
+      <workItem from="1549498930963" duration="609000" />
+      <workItem from="1549749335899" duration="3660000" />
+      <workItem from="1550198932718" duration="20000" />
+      <workItem from="1550199157244" duration="5713000" />
     </task>
     <task id="LOCAL-00001" summary="add Chat with flattening, and begin match section">
       <created>1549166902640</created>
@@ -203,22 +246,17 @@
       <option name="project" value="LOCAL" />
       <updated>1549166902640</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add keyword matching to Match">
+      <created>1549251338903</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1549251338903</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_fragment_test_TestFragment - 2019.01.31 at 22h 26m 24s.xml">
-      <configuration name="Unittests for fragment_test.TestFragment" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_fragment_test_TestFragment - 2019.01.31 at 22h 26m 36s.xml">
-      <configuration name="Unittests for fragment_test.TestFragment" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_fragment_test_TestFragment - 2019.01.31 at 22h 26m 40s.xml">
-      <configuration name="Unittests for fragment_test.TestFragment" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_fragment_test_TestFragment - 2019.01.31 at 22h 27m 05s.xml">
-      <configuration name="Unittests for fragment_test.TestFragment" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_cleanIt_test_TestCleanIt - 2019.01.31 at 22h 27m 10s.xml">
       <configuration name="Unittests for cleanIt_test.TestCleanIt" configurationId="tests" />
     </history-entry>
@@ -237,35 +275,47 @@
     <history-entry file="Unittests_for_similarity_test_TestSynomize - 2019.02.01 at 16h 56m 12s.xml">
       <configuration name="Unittests for similarity_test.TestSynomize" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_chat_test_TestChat_test_chat_match - 2019.02.09 at 15h 57m 10s.xml">
+      <configuration name="Unittests for chat_test.TestChat.test_chat_match" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_synomize_test_TestSynomize_test_spelling_and_synomize - 2019.02.14 at 21h 09m 14s.xml">
+      <configuration name="Unittests for synomize_test.TestSynomize.test_spelling_and_synomize" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_synomize_test_TestSynomize_test_spelling_and_synomize - 2019.02.14 at 21h 12m 57s.xml">
+      <configuration name="Unittests for synomize_test.TestSynomize.test_spelling_and_synomize" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_synomize_test_TestSynomize_test_spelling_and_synomize - 2019.02.14 at 21h 13m 19s.xml">
+      <configuration name="Unittests for synomize_test.TestSynomize.test_spelling_and_synomize" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22693000" />
+    <option name="totallyTimeSpent" value="33464000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
+    <frame x="-7" y="-7" width="2208" height="1208" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2696177" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.13011402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" weight="0.32956153" />
-      <window_info anchor="bottom" id="Terminal" weight="0.33285713" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.446959" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44661096" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32956153" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33285713" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32956153" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +323,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add Chat with flattening, and begin match section" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Chat with flattening, and begin match section" />
+    <MESSAGE value="add keyword matching to Match" />
+    <option name="LAST_COMMIT_MESSAGE" value="add keyword matching to Match" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/fragIt_test.py">
@@ -296,20 +347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/synomize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="37" lean-forward="true" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/synomize_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="27" lean-forward="true" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cleanIt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -324,33 +361,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/similarity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="9" lean-forward="true" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/similarity_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -371,30 +381,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parsePhrase.py">
+    <entry file="file://$PROJECT_DIR$/chat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="45" column="120" lean-forward="true" selection-start-line="45" selection-start-column="120" selection-end-line="45" selection-end-column="120" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chat_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+        <state relative-caret-position="356">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="83" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat.py">
+    <entry file="file://$PROJECT_DIR$/similarity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+        <state relative-caret-position="17">
+          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similarity_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parsePhrase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/synomize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/synomize_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
