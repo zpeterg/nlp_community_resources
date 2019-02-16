@@ -6,19 +6,13 @@
     </enabled-run-configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48931b6b-f097-4533-9ab1-4aec3cef3b97" name="Default Changelist" comment="">
+    <list default="true" id="48931b6b-f097-4533-9ab1-4aec3cef3b97" name="Default Changelist" comment="add test for alternative">
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chat_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleanIt.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleanIt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleanIt_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleanIt_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fragIt.py" beforeDir="false" afterPath="$PROJECT_DIR$/fragIt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fragIt_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/fragIt_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parsePhrase.py" beforeDir="false" afterPath="$PROJECT_DIR$/parsePhrase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsePhrase_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/parsePhrase_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/similarity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/synomize.py" beforeDir="false" afterPath="$PROJECT_DIR$/synomize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/synomize_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/synomize_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,12 +30,12 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chat_test.py">
+        <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1002">
-              <caret line="104" column="12" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
+            <state relative-caret-position="374">
+              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#0#21#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,7 +52,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>flatten</find>
       <find>.resourc</find>
       <find>anger</find>
       <find>subject--</find>
@@ -71,6 +64,15 @@
       <find>print(</find>
       <find>!!!!!</find>
       <find>----</find>
+      <find>from resour</find>
+      <find>phrase</find>
+      <find>options</find>
+      <find>class</find>
+      <find>communit</find>
+      <find>flatten</find>
+      <find>children</find>
+      <find>clinics</find>
+      <find>manna</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,7 +85,6 @@
         <option value="$PROJECT_DIR$/fragment_test.py" />
         <option value="$PROJECT_DIR$/index.py" />
         <option value="$PROJECT_DIR$/index_test.py" />
-        <option value="$PROJECT_DIR$/resources.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/similarity_test.py" />
         <option value="$PROJECT_DIR$/synomize_test.py" />
@@ -94,18 +95,20 @@
         <option value="$PROJECT_DIR$/fragIt_test.py" />
         <option value="$PROJECT_DIR$/parsePhrase_test.py" />
         <option value="$PROJECT_DIR$/utils.js" />
-        <option value="$PROJECT_DIR$/parsePhrase.py" />
         <option value="$PROJECT_DIR$/similarity.py" />
-        <option value="$PROJECT_DIR$/chat.py" />
         <option value="$PROJECT_DIR$/chat_test.py" />
+        <option value="$PROJECT_DIR$/main_test.py" />
+        <option value="$PROJECT_DIR$/resources.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/parsePhrase.py" />
+        <option value="$PROJECT_DIR$/chat.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-13" />
-    <option name="y" value="-13" />
-    <option name="width" value="3864" />
-    <option name="height" value="2184" />
+    <option name="x" value="1909" />
+    <option name="width" value="1943" />
+    <option name="height" value="2102" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -253,7 +256,7 @@
       <workItem from="1549498930963" duration="609000" />
       <workItem from="1549749335899" duration="3660000" />
       <workItem from="1550198932718" duration="20000" />
-      <workItem from="1550199157244" duration="19811000" />
+      <workItem from="1550199157244" duration="28144000" />
     </task>
     <task id="LOCAL-00001" summary="add Chat with flattening, and begin match section">
       <created>1549166902640</created>
@@ -276,7 +279,21 @@
       <option name="project" value="LOCAL" />
       <updated>1550204949739</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactor to tuples &amp; add alternative search">
+      <created>1550275335263</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1550275335263</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add test for alternative">
+      <created>1550275752845</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1550275752845</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -312,7 +329,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47562000" />
+    <option name="totallyTimeSpent" value="55895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2208" height="1208" extended-state="6" />
@@ -348,7 +365,9 @@
     <MESSAGE value="add Chat with flattening, and begin match section" />
     <MESSAGE value="add keyword matching to Match" />
     <MESSAGE value="start spell check" />
-    <option name="LAST_COMMIT_MESSAGE" value="start spell check" />
+    <MESSAGE value="refactor to tuples &amp; add alternative search" />
+    <MESSAGE value="add test for alternative" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test for alternative" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -425,13 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -462,16 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parsePhrase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/similarity.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -479,19 +481,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat.py">
+    <entry file="file://$PROJECT_DIR$/main_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+        <state relative-caret-position="51">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="75" lean-forward="true" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chat_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1002">
-          <caret line="104" column="12" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
+        <state relative-caret-position="900">
+          <caret line="118" column="167" selection-start-line="118" selection-start-column="167" selection-end-line="118" selection-end-column="167" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parsePhrase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
