@@ -5,32 +5,25 @@ from synomize import spell_suggest, synomize
 class TestSynomize(unittest.TestCase):
     def test_synomize(self):
         arr = ['fish', 'taste', 'like', 'dozen', 'cat']
-        res = [
-            {'Fish', 'Pisces', 'Pisces_the_Fishes', 'fish', 'angle'},
-            {'try_out', 'preference', 'gustatory_modality', 'discernment', 'predilection', 'perceptiveness', 'smack',
-             'tasting', 'sense_of_taste', 'taste_perception', 'appreciation', 'gustatory_perception', 'penchant',
-             'taste_sensation', 'try', 'taste', 'mouthful', 'gustatory_sensation', 'savour', 'gustation', 'savor',
-             'sample'},
-            {'wish', 'the_likes_of', 'similar', 'comparable', 'corresponding', 'ilk', 'the_like', 'care', 'same',
-             'like', 'alike'},
-            {'dozen', 'xii', 'twelve', 'XII', '12'},
-            {'qat', 'bozo', 'CT', 'disgorge', 'computed_axial_tomography', 'cat', 'CAT', 'barf', 'big_cat', 'cast',
-             'computerized_tomography', 'sick', 'throw_up', "cat-o'-nine-tails", 'computed_tomography', 'upchuck',
-             'Caterpillar', 'Arabian_tea', 'puke', 'kat', 'spew', 'African_tea', 'khat', 'chuck', 'purge', 'quat',
-             'regorge', 'regurgitate', 'retch', 'be_sick', 'guy', 'honk', 'hombre', 'vomit', 'spue', 'vomit_up',
-             'true_cat', 'computerized_axial_tomography'},
-        ]
+        res = (
+            ('African_tea', 'Arabian_tea', 'CAT', 'CT', 'Caterpillar', 'barf', 'be_sick', 'big_cat', 'bozo', 'cast', 'cat', "cat-o'-nine-tails", 'chuck', 'computed_axial_tomography', 'computed_tomography', 'computerized_axial_tomography', 'computerized_tomography', 'disgorge', 'guy', 'hombre', 'honk', 'kat', 'khat', 'puke', 'purge', 'qat', 'quat', 'regorge', 'regurgitate', 'retch', 'sick', 'spew', 'spue', 'throw_up', 'true_cat', 'upchuck', 'vomit', 'vomit_up'),
+            ('12', 'XII', 'dozen', 'twelve', 'xii'),
+            ('Fish', 'Pisces', 'Pisces_the_Fishes', 'angle', 'fish'),
+            ('alike', 'care', 'comparable', 'corresponding', 'ilk', 'like', 'same', 'similar', 'the_like', 'the_likes_of', 'wish'),
+            ('appreciation', 'discernment', 'gustation', 'gustatory_modality', 'gustatory_perception', 'gustatory_sensation', 'mouthful', 'penchant', 'perceptiveness', 'predilection', 'preference', 'sample', 'savor', 'savour', 'sense_of_taste', 'smack', 'taste', 'taste_perception', 'taste_sensation', 'tasting', 'try', 'try_out')
+        )
         self.assertEqual(res, synomize(arr))
 
     def test_spell_suggest(self):
         words = ['something', 'is', 'hapenning', 'here']
-        res = ('something', 'is', 'henning', 'happening', 'penning', 'here')
+        res = ('hapenning', 'happening', 'henning', 'here', 'is', 'penning', 'something')
         self.assertEqual(res, spell_suggest(words))
 
     def test_spelling_and_synomize(self):
-        arr = ['fishys']
-        res = [
-            {'fishy', 'suspicious', 'shady', 'suspect', 'funny'},
-            {'Fish', 'fishes', 'Pisces_the_Fishes', 'angle', 'fish', 'Pisces'},
-        ]
+        arr = ('fishys',)
+        res = (
+            ('Fish', 'Pisces', 'Pisces_the_Fishes', 'angle', 'fish', 'fishes'),
+            ('fishy', 'funny', 'shady', 'suspect', 'suspicious'),
+            ('fishys',),
+        )
         self.assertEqual(res, synomize(arr))

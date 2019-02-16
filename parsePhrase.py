@@ -9,11 +9,11 @@ def prepPhrase(phrase):
 
 def parsePhrase(arr, phrase):
     rtn = {'count': 0, 'similarity': 0}
-    synomizedPhrase = synomize(prepPhrase(phrase))
+    synomized_phrase = synomize(prepPhrase(phrase))
     # prep each piece of comparison array
     for x in arr:
-        preppedArr = prepPhrase(x)
-        sim = similarity(preppedArr, synomizedPhrase)
+        prepped_arr = prepPhrase(x)
+        sim = similarity(prepped_arr, synomized_phrase)
         # get count of matching phrases
         rtn['similarity'] += sim
         # get total similarity (can match multiple parts of each phrase in 'arr'

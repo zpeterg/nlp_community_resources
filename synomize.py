@@ -6,26 +6,30 @@ spell = SpellChecker()
 
 def spell_suggest(words):
     # find those words that may be misspelled
-    misspelled = spell.unknown(words)
     rtn = ()
     for word in words:
         cands = spell.candidates(word)
-        rtn += tuple(cands)
-    return rtn
+        # always include the original word
+        rtn += (word,)
+        # add each candidate word, if not already there
+        for c in cands:
+            if c not in rtn:
+                rtn += (c,)
+    return tuple(sorted(rtn))
 
 
-###################### todo: working on adding spelling check below
 def synomize(arr):
-    rtn = []
+    rtn = ()
 
     arr = spell_suggest(tuple(arr))
-    arr = list(set(arr))
 
     for word in arr:
-        wordSet = {word}
+        word_set = (word,)
         for syn in wordnet.synsets(word):
             for l in syn.lemmas():
-                wordSet.add(l.name())
-        rtn.append(wordSet)
+                # only add if not a duplicate
+                if l.name() not in word_set:
+                    word_set += (l.name(),)
+        rtn += (tuple(sorted(word_set)),)
     return rtn
 

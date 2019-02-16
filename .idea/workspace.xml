@@ -8,8 +8,15 @@
   <component name="ChangeListManager">
     <list default="true" id="48931b6b-f097-4533-9ab1-4aec3cef3b97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/similarity_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/similarity_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanIt.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleanIt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanIt_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleanIt_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fragIt.py" beforeDir="false" afterPath="$PROJECT_DIR$/fragIt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fragIt_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/fragIt_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parsePhrase.py" beforeDir="false" afterPath="$PROJECT_DIR$/parsePhrase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parsePhrase_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/parsePhrase_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/similarity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/synomize.py" beforeDir="false" afterPath="$PROJECT_DIR$/synomize.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/synomize_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/synomize_test.py" afterDir="false" />
     </list>
@@ -29,10 +36,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/synomize_test.py">
+        <entry file="file://$PROJECT_DIR$/chat_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
+            <state relative-caret-position="1002">
+              <caret line="104" column="12" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -56,9 +63,14 @@
       <find>anger</find>
       <find>subject--</find>
       <find>syno</find>
-      <find>synomize</find>
       <find>synomize(</find>
       <find>except</find>
+      <find>synomize</find>
+      <find>test_parse_</find>
+      <find>parsePhrase</find>
+      <find>print(</find>
+      <find>!!!!!</find>
+      <find>----</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -69,34 +81,37 @@
       <list>
         <option value="$PROJECT_DIR$/fragment.py" />
         <option value="$PROJECT_DIR$/fragment_test.py" />
-        <option value="$PROJECT_DIR$/cleanIt_test.py" />
-        <option value="$PROJECT_DIR$/cleanIt.py" />
         <option value="$PROJECT_DIR$/index.py" />
         <option value="$PROJECT_DIR$/index_test.py" />
-        <option value="$PROJECT_DIR$/parsePhrase_test.py" />
         <option value="$PROJECT_DIR$/resources.py" />
-        <option value="$PROJECT_DIR$/chat.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/chat_test.py" />
-        <option value="$PROJECT_DIR$/similarity.py" />
         <option value="$PROJECT_DIR$/similarity_test.py" />
-        <option value="$PROJECT_DIR$/parsePhrase.py" />
-        <option value="$PROJECT_DIR$/synomize.py" />
         <option value="$PROJECT_DIR$/synomize_test.py" />
+        <option value="$PROJECT_DIR$/synomize.py" />
+        <option value="$PROJECT_DIR$/cleanIt_test.py" />
+        <option value="$PROJECT_DIR$/cleanIt.py" />
+        <option value="$PROJECT_DIR$/fragIt.py" />
+        <option value="$PROJECT_DIR$/fragIt_test.py" />
+        <option value="$PROJECT_DIR$/parsePhrase_test.py" />
+        <option value="$PROJECT_DIR$/utils.js" />
+        <option value="$PROJECT_DIR$/parsePhrase.py" />
+        <option value="$PROJECT_DIR$/similarity.py" />
+        <option value="$PROJECT_DIR$/chat.py" />
+        <option value="$PROJECT_DIR$/chat_test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-14" />
-    <option name="width" value="1367" />
-    <option name="height" value="1456" />
+    <option name="x" value="-13" />
+    <option name="y" value="-13" />
+    <option name="width" value="3864" />
+    <option name="height" value="2184" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -108,6 +123,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,7 +253,7 @@
       <workItem from="1549498930963" duration="609000" />
       <workItem from="1549749335899" duration="3660000" />
       <workItem from="1550198932718" duration="20000" />
-      <workItem from="1550199157244" duration="5713000" />
+      <workItem from="1550199157244" duration="19811000" />
     </task>
     <task id="LOCAL-00001" summary="add Chat with flattening, and begin match section">
       <created>1549166902640</created>
@@ -253,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1549251338903</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="start spell check">
+      <created>1550204949739</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550204949739</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -289,17 +312,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33464000" />
+    <option name="totallyTimeSpent" value="47562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2208" height="1208" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.13011402" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09395349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.39165545" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.44661096" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -324,87 +347,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add Chat with flattening, and begin match section" />
     <MESSAGE value="add keyword matching to Match" />
-    <option name="LAST_COMMIT_MESSAGE" value="add keyword matching to Match" />
+    <MESSAGE value="start spell check" />
+    <option name="LAST_COMMIT_MESSAGE" value="start spell check" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fragIt_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanIt_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cleanIt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fragIt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="21" lean-forward="true" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parsePhrase_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="15" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="45" column="120" lean-forward="true" selection-start-line="45" selection-start-column="120" selection-end-line="45" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="83" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/similarity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -425,30 +371,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parsePhrase.py">
+    <entry file="file://$PROJECT_DIR$/synomize_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="476">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanIt_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanIt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Miniconda3/envs/nlp/Lib/site-packages/nltk/tokenize/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="127" column="4" selection-start-line="127" selection-start-column="4" selection-end-line="127" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fragIt_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="139" selection-start-line="4" selection-start-column="139" selection-end-line="4" selection-end-column="139" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fragIt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parsePhrase_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/synomize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="442">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/synomize_test.py">
+    <entry file="file://$PROJECT_DIR$/parsePhrase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
+        <state relative-caret-position="238">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similarity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1002">
+          <caret line="104" column="12" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

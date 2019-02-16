@@ -2,7 +2,7 @@ import unittest
 from fragIt import fragIt
 
 sent = "The Raven. It's by Edgar Allan Poe. Once upon a midnight dreary, while..."
-res = ['The', 'Raven', '.', 'It', "'s", 'by', 'Edgar', 'Allan', 'Poe', '.', 'Once', 'upon', 'a', 'midnight', 'dreary', ',', 'while', '...']
+res = ('The', 'Raven', '.', 'It', "'s", 'by', 'Edgar', 'Allan', 'Poe', '.', 'Once', 'upon', 'a', 'midnight', 'dreary', ',', 'while', '...')
 
 class TestFragment(unittest.TestCase):
 

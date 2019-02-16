@@ -7,10 +7,15 @@ phrase2 = 'I would like to hear about help with house rent in the Siloam Springs
 
 class TestParsePhrase(unittest.TestCase):
     def test_prep_phrase(self):
-        res = ['would', 'like', 'hear', 'help', 'house', 'rent', 'siloam', 'area']
+        res = ('would', 'like', 'hear', 'help', 'house', 'rent', 'siloam', 'area')
         self.assertEqual(res, prepPhrase(phrase))
 
     def test_parse_phrase(self):
         arr = ['housing assistance', 'Siloam Springs']
         res = {'count': 2, 'similarity': 3}
         self.assertEqual(res, parsePhrase(arr, phrase))
+
+    def test_parse_phrase_that_is_more_similar(self):
+        arr = ['housing assistance', 'Siloam Springs']
+        res = {'count': 2, 'similarity': 4}
+        self.assertEqual(res, parsePhrase(arr, phrase2))
