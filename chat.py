@@ -55,6 +55,7 @@ class Chat:
 
     def match(self, search_str):
         all_matching = []
+        most_sim = None
         # certainty is 0-2
         certainty = 2
         for item in self.flattened:
@@ -65,13 +66,14 @@ class Chat:
         # Return "none" if nothing matches
         if len(all_matching) == 0:
             certainty = 0
-
-        # Match to items that share subject (sub-tree)
-        most_sim = match_to_list(all_matching, search_str)
+        else:
+            # Match to items that share subject (sub-tree)
+            most_sim = match_to_list(all_matching, search_str)
 
         # if nothing matches, look everywhere
-        if most_sim['count'] <= 0:
+        if not most_sim or most_sim['count'] <= 0:
             most_sim = match_to_list(self.flattened, search_str)
 
-        most_sim['certainty'] = certainty
+        if most_sim:
+            most_sim['certainty'] = certainty
         return most_sim

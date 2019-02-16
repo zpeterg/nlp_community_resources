@@ -42,7 +42,7 @@ resources = [
                 "isLeaf": True
             },
             {
-                "name": "Sword Fish",
+                "name": "Zebra Moray",
                 "keywords": ("Zebra striped Moray",),
                 "info": ({"name": "Diet", "value": "Sea urchins, mollusks, and crustaceans."},),
                 "isLeaf": True
@@ -86,7 +86,7 @@ class TestChat(unittest.TestCase):
             {'subject': ('fishes', 'deep sea fishes', 'Sword Fish'), 'keywords': ('fish seafood animal', 'deep bottom-dwellers', 'Sword Xiphias'), 'info': ({'name': 'Unusual characteristics', 'value': 'sword'},), 'isLeaf': True},
             {'subject': ('eels',), 'keywords': ('eel snake-like',), 'phrase': 'Are you looking for eels?', 'options': 'What kind of eels are you looking for?'},
             {'subject': ('eels', "Synder's Moray"), 'keywords': ('eel snake-like', "Synder's finespot Moray"), 'info': ({'name': 'It was discovered in 1904'},), 'isLeaf': True},
-            {'subject': ('eels', 'Sword Fish'), 'keywords': ('eel snake-like', 'Zebra striped Moray'), 'info': ({'name': 'Diet', 'value': 'Sea urchins, mollusks, and crustaceans.'},), 'isLeaf': True},
+            {'subject': ('eels', 'Zebra Moray'), 'keywords': ('eel snake-like', 'Zebra striped Moray'), 'info': ({'name': 'Diet', 'value': 'Sea urchins, mollusks, and crustaceans.'},), 'isLeaf': True},
         ]
         thisChat = Chat(resources, ['foo'])
         thisChat.flatten()
@@ -101,5 +101,16 @@ class TestChat(unittest.TestCase):
             'certainty': 2
         }
         thisChat = Chat(resources, ['fishes', 'deep sea fishes'])
+        thisChat.flatten()
+        self.assertEqual(thisChat.match(searchStr), res)
+
+    def test_chat_match_alternative(self):
+        searchStr = 'Zebra'
+        res = {
+            'count': 1, 'similarity': 1, 'value': {'subject': ('eels', 'Zebra Moray'), 'keywords': ('eel snake-like', 'Zebra striped Moray'), 'info': ({'name': 'Diet', 'value': 'Sea urchins, mollusks, and crustaceans.'},), 'isLeaf': True},
+            'certainty': 0
+        }
+
+        thisChat = Chat(resources, ['fishes', 'nothingthere'])
         thisChat.flatten()
         self.assertEqual(thisChat.match(searchStr), res)
