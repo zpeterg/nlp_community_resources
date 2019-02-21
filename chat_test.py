@@ -66,6 +66,8 @@ class TestChat(unittest.TestCase):
         )
         res = {
             'count': 2,
+            'lastCount': 1,
+            'lastSimilarity': 1,
             'similarity': 2,
             'value': tup[1],
         }
@@ -99,6 +101,8 @@ class TestChat(unittest.TestCase):
         searchStr = 'Angler'
         res = {
             'count': 1,
+            'lastCount': 1,
+            'lastSimilarity': 1,
             'similarity': 1,
             'value': {
                 'subject': ('fishes', 'deep sea fishes', 'Angler Fish'),
@@ -107,7 +111,7 @@ class TestChat(unittest.TestCase):
                 'info': ({'name': 'It has a light'},),
                 'isLeaf': True
             },
-            'certainty': 2
+            'certainty': 1
         }
         thisChat = Chat(resources, ['fishes', 'deep sea fishes'])
         thisChat.flatten()
@@ -116,8 +120,17 @@ class TestChat(unittest.TestCase):
     def test_chat_match_alternative(self):
         searchStr = 'Zebra'
         res = {
-            'count': 1, 'similarity': 1, 'value': {'subject': ('eels', 'Zebra Moray'), 'keywords': ('eel snake-like', 'Zebra striped Moray'), 'phrase': ('Zebra Moray',), 'info': ({'name': 'Diet', 'value': 'Sea urchins, mollusks, and crustaceans.'},), 'isLeaf': True},
-            'certainty': 0
+            'count': 1,
+            'lastCount': 1,
+            'lastSimilarity': 1,
+            'similarity': 1,
+            'value': {
+                'subject': ('eels', 'Zebra Moray'),
+                'keywords': ('eel snake-like', 'Zebra striped Moray'),
+                'phrase': ('Zebra Moray',),
+                'info': ({'name': 'Diet', 'value': 'Sea urchins, mollusks, and crustaceans.'},),
+                'isLeaf': True},
+            'certainty': 1
         }
 
         thisChat = Chat(resources, ['fishes', 'nothingthere'])
