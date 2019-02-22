@@ -99,7 +99,7 @@ resources = [
                 "phrase": ("a counseling service",),
                 "children": [
                     {
-                        "name": "JBU care clinic",
+                        "name": "JBU Care Clinic",
                         "keywords": ("JBU",),
                         "info": ({
                             "phone": "479-524-7300",
@@ -107,7 +107,18 @@ resources = [
                             "location": "Across from JBU"
                         },),
                         "isLeaf": True,
-                        "phrase": ("JBU Care Clinic",),
+                        "phrase": ("1.JBU Care Clinic",),
+                    },
+                    {
+                        "name": "Glenhaven Counseling",
+                        "keywords": ("Glenhaven",),
+                        "info": ({
+                            "phone": "479-238-3950",
+                            "address": "500 S. Broadway",
+                            "location": "Across from Library"
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("2.Glenhaven Counseling",),
                     },
                     {
                         "name": "Ozark Guidance",
@@ -118,7 +129,7 @@ resources = [
                             "location": "Across from the Middle School"
                         },),
                         "isLeaf": True,
-                        "phrase": ("Ozark Guidance",),
+                        "phrase": ("3.Ozark Guidance",),
                     }
                 ]
             },

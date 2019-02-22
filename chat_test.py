@@ -1,5 +1,6 @@
 import unittest
 from chat import match_to_list, Chat
+from flatten import flatten
 
 resources = [
     {
@@ -68,6 +69,7 @@ class TestChat(unittest.TestCase):
             'count': 2,
             'lastCount': 1,
             'lastSimilarity': 1,
+            'matching': ('fish', 'deep'),
             'similarity': 2,
             'value': tup[1],
         }
@@ -79,60 +81,47 @@ class TestChat(unittest.TestCase):
         resources = [{'name': 'foo', 'keywords': ('foo man',)}]
         subject = ['bar']
         thisChat = Chat(resources, subject)
-        self.assertEqual(resources, thisChat.resources)
-        self.assertEqual([{'subject': ('foo',), 'keywords': ('foo man',)}], thisChat.flattened)
+        self.assertEqual(resources, thisChat.flattened_res)
         self.assertEqual(subject, thisChat.subject)
 
-    def test_chat_flatten(self):
-
-        res = [
-            {'subject': ('fishes',), 'keywords': ('fish seafood animal',), 'phrase': ("It looks like you're looking for fishes.",), 'options': ('What kind of fishes are you looking for?',), 'children': ('We have several fishes that swim deep.',)},
-            {'subject': ('fishes', 'deep sea fishes'), 'keywords': ('fish seafood animal', 'deep bottom-dwellers'), 'phrase': ('We have several fishes that swim deep.',), 'children': ('Angler Fish', 'Sword Fish')},
-            {'subject': ('fishes', 'deep sea fishes', 'Angler Fish'), 'keywords': ('fish seafood animal', 'deep bottom-dwellers', 'Angler Lophiiformes'), 'phrase': ('Angler Fish',), 'info': ({'name': 'It has a light'},), 'isLeaf': True},
-            {'subject': ('fishes', 'deep sea fishes', 'Sword Fish'), 'keywords': ('fish seafood animal', 'deep bottom-dwellers', 'Sword Xiphias'), 'phrase': ('Sword Fish',), 'info': ({'name': 'Unusual characteristics', 'value': 'sword'},), 'isLeaf': True},
-            {'subject': ('eels',), 'keywords': ('eel snake-like',), 'phrase': ('Are you looking for eels?',), 'options': ('What kind of eels are you looking for?',), 'children': ("Snyder's Moray", 'Zebra Moray')},
-            {'subject': ('eels', "Synder's Moray"), 'keywords': ('eel snake-like', "Synder's finespot Moray"), 'phrase': ("Snyder's Moray",), 'info': ({'name': 'It was discovered in 1904'},), 'isLeaf': True},
-            {'subject': ('eels', 'Zebra Moray'), 'keywords': ('eel snake-like', 'Zebra striped Moray'), 'phrase': ('Zebra Moray',), 'info': ({'name': 'Diet', 'value': 'Sea urchins, mollusks, and crustaceans.'},), 'isLeaf': True}]
-        thisChat = Chat(resources, ['foo'])
-        thisChat.flatten()
-        self.assertEqual(thisChat.flattened, res)
-
     def test_chat_match(self):
-        searchStr = 'Angler'
+        search_str = 'Angler'
         res = {
             'count': 1,
             'lastCount': 1,
             'lastSimilarity': 1,
+            'matching': ('angler',),
             'similarity': 1,
             'value': {
                 'subject': ('fishes', 'deep sea fishes', 'Angler Fish'),
-                'keywords': ('fish seafood animal', 'deep bottom-dwellers', 'Angler Lophiiformes'),
+                'keywords': (('fish', 'seafood', 'animal'), ('deep', 'bottom-dwellers'), ('angler', 'lophiiformes')),
                 'phrase': ('Angler Fish',),
                 'info': ({'name': 'It has a light'},),
                 'isLeaf': True
             },
             'certainty': 1
         }
-        thisChat = Chat(resources, ['fishes', 'deep sea fishes'])
-        thisChat.flatten()
-        self.assertEqual(thisChat.match(searchStr), res)
+        thisChat = Chat(flatten(resources), ['fishes', 'deep sea fishes'])
+        print(thisChat.match(search_str))
+        self.assertEqual(thisChat.match(search_str), res)
 
     def test_chat_match_alternative(self):
-        searchStr = 'Zebra'
+        search_str = 'Zebra'
         res = {
             'count': 1,
-            'lastCount': 1,
-            'lastSimilarity': 1,
             'similarity': 1,
             'value': {
                 'subject': ('eels', 'Zebra Moray'),
-                'keywords': ('eel snake-like', 'Zebra striped Moray'),
+                'keywords': (('eel', 'snake-like'), ('zebra', 'strip', 'moray')),
                 'phrase': ('Zebra Moray',),
                 'info': ({'name': 'Diet', 'value': 'Sea urchins, mollusks, and crustaceans.'},),
-                'isLeaf': True},
-            'certainty': 1
+                'isLeaf': True
+            },
+            'lastCount': 1,
+            'lastSimilarity': 1,
+            'matching': ('zebra',),
+            'certainty': 2
         }
 
-        thisChat = Chat(resources, ['fishes', 'nothingthere'])
-        thisChat.flatten()
-        self.assertEqual(thisChat.match(searchStr), res)
+        thisChat = Chat(flatten(resources), ['fishes', 'nothingthere'])
+        self.assertEqual(thisChat.match(search_str), res)

@@ -1,7 +1,7 @@
 from parsePhrase import parsePhrase
 
 def match_to_list(tup, search_str):
-    highest_similarity = {'similarity': 0, 'count': 0, 'lastCount': 0, 'lastSimilarity': 0}
+    highest_similarity = {'similarity': 0, 'count': 0, 'lastCount': 0, 'lastSimilarity': 0, 'matching': ()}
     highest_similarity_item = tup[0]
     for item in tup:
         # parsePhrase() returns something like {'count': 2, 'similarity': 3, 'lastCount': 0, 'lastSimilarity': 0}
@@ -16,6 +16,7 @@ def match_to_list(tup, search_str):
         'value': highest_similarity_item,
         'lastCount': highest_similarity['lastCount'],
         'lastSimilarity': highest_similarity['lastSimilarity'],
+        'matching': highest_similarity['matching'],
     }
 
 

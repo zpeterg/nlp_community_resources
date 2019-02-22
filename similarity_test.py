@@ -10,5 +10,5 @@ class TestSimilarity(unittest.TestCase):
             {'12', 'dozen'},
             {'anchovies', 'fish'},
         ]
-        res = 2
+        res = {'count': 2, 'matching': ('cat', 'dozen'), 'syn_count': 2}
         self.assertEqual(res, similarity(arr, synoArr))
