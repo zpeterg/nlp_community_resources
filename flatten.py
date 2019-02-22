@@ -2,7 +2,8 @@ from fragIt import fragIt
 from cleanIt import cleanIt
 
 def prepPhrase(phrase):
-    return cleanIt(fragIt(phrase))
+    rtn = cleanIt(fragIt(phrase))
+    return rtn
 
 def clean_child(parent_keywords, keywords):
     # convert to array to make mutable

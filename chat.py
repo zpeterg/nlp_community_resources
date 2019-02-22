@@ -27,22 +27,26 @@ class Chat:
         self.language = language
 
     def match(self, search_str):
-        all_matching = []
+        all_matching = ()
+        level_matching = ()
         most_sim = None
         for item in self.flattened_res:
             # Merge subjects into strings, and look to see if the subject sought is in this item's subject
             if ''.join(self.subject) in ''.join(item['subject']):
-                all_matching.append(item)
-
-        # Return "none" if nothing matches
-        if len(all_matching) != 0:
+                all_matching += (item,)
+                # If next level-deep, add to that list
+                if len(self.subject) + 1 == len(item['subject']):
+                    level_matching += (item,)
+        # If some next-level items, check those
+        if len(level_matching) != 0:
             # Match to items that share subject (sub-tree)
+            most_sim = match_to_list(level_matching, search_str)
+        # If next-level doesn't match, check everything down-tree
+        if (not most_sim or most_sim['count'] <= 0) and len(all_matching) != 0:
             most_sim = match_to_list(all_matching, search_str)
-
-        # if nothing matches, look everywhere
+        # If nothing matches down-tree, look everywhere
         if not most_sim or most_sim['count'] <= 0:
             most_sim = match_to_list(self.flattened_res, search_str)
-
         # Adjust certainty on total matching or match count
         # certainty is 0-2
         if len(all_matching) == 0:

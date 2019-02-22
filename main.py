@@ -30,6 +30,8 @@ def chat_loop():
                 children = ', '.join(str(i) for i in match_value['children'])
                 main_phrase += f" Here are some options: {children}. Which do you need?"
             if 'isLeaf' in match_value:
+                # If is a leaf, limit the subject to the previous level
+                subject = subject[:-1]
                 leaf_info = ''
                 for key, val in match_value['info'][default_language].items():
                     leaf_info += f'\n{key.capitalize()}: {val}'

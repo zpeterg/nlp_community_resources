@@ -1,9 +1,9 @@
 from nltk.corpus import stopwords
-from nltk.stem import PorterStemmer
+# from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 wordnet_lemmatizer = WordNetLemmatizer()
 
-ps = PorterStemmer()
+# port_stemmer = PorterStemmer()
 
 def cleanIt(tup):
     rtn = ()
@@ -12,6 +12,7 @@ def cleanIt(tup):
         word = word.strip().lower()
         # Add it to the list if it's not a 'stop word'
         if word not in stopwords.words('english') and word not in rtn:
-            rtn += (format(wordnet_lemmatizer.lemmatize(word, pos="v")),)
+            rtn += (wordnet_lemmatizer.lemmatize(word),)
+            # rtn += (port_stemmer.stem(word),)
     return rtn
 

@@ -1,7 +1,9 @@
 resources = [
     {
         "name": "clinic",
-        "keywords": ("clinic doctor's nurse practitioner office sick injury",),
+        "keywords": (
+            "clinic doctor nurse practitioner office sick ill illness vomiting pain flu influenza injury injured wounded",
+        ),
         "phrase": ("a medical clinic",),
         "options": ("What kind of clinic are you needing?",),
         "children": (
@@ -12,78 +14,224 @@ resources = [
                 "children": [
                     {
                         "name": "northwest urgent-care",
-                        "keywords": ("Northwest 412",),
-                        "info": ({"name": "Northwest Urgent Care"},),
+                        "keywords": ("1 Northwest",),
+                        "info": ({
+                            "Address": "3271 E US 412 Hwy",
+                            "Phone": "479-215-3080",
+                            "Location": "Near Lowes on 412",
+                        },),
                         "isLeaf": True,
-                        "phrase": ("Northwest Urgent Care",),
+                        "phrase": ("1.Northwest Urgent Care",),
                     }
                 ]
             },
             {
                 "name": "primary-care",
-                "keywords": ("primary-care primary care family-care family care family-practice",),
+                "keywords": ("primary-care primary family-care family-practice",),
                 "phrase": ("a primary-care clinic",),
                 "children": [
                     {
-                        "name": "community-clinic main",
-                        "keywords": ("Community St.Francis",),
-                        "info": ({"name": "Community Clinic on Holly Street"},),
+                        "name": "Community Clinic",
+                        "keywords": ("1 Community",),
+                        "info": ({
+                            "For": "Kids + Adults",
+                            "Phone": "500 S Mt Olive",
+                            "Address": "855-438-2280",
+                            "Location": "Across from library",
+                        },),
                         "isLeaf": True,
-                        "phrase": ("Community Clinic on Holly St.",),
-                    }
+                        "phrase": ("1.Community Clinic",),
+                    },
+                    {
+                        "name": "Panther Clinic",
+                        "keywords": ("2 Panther",),
+                        "info": ({
+                            "For": "Kids + Adults",
+                            "Phone": "479-524-8175",
+                            "Address": "1500 N Mt Olive",
+                            "Location": "In Intermediate School",
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("2.Panther Clinic",),
+                    },
                 ]
             },
             {
                 "name": "pediatric-care",
                 "keywords": ("pediatrician pediatric child",),
-                "phrase": ("a pediatric clinic",),
+                "phrase": ("a children's clinic",),
                 "children": [
                     {
-                        "name": "sager creek",
-                        "keywords": ("Sager Creek",),
-                        "info": ({"name": "Sager Creek on Progress Ave"},),
+                        "name": "Panther Clinic",
+                        "keywords": ("1 Panther",),
+                        "info": ({
+                            "For": "Children + Adults",
+                            "Phone": "479-524-8175",
+                            "Address": "1500 N Mt Olive",
+                            "Location": "In Intermediate School",
+                        },),
                         "isLeaf": True,
-                        "phrase": ("Sager Creek",),
+                        "phrase": ("1.Panther Clinic",),
+                    },
+                    {
+                        "name": "Sager Creek",
+                        "keywords": ("2 Sager Creek",),
+                        "info": ({
+                             "For": "Children",
+                             "Phone": "479-549-4228",
+                             "Address": "1101-2 N Progress Ave",
+                             "Location": "Near hospital",
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("2.Sager Creek",),
                     }
                 ]
+            },
+            {
+                "name": "vaccines",
+                "keywords": ("vaccine vaccination immunization immunize shot",),
+                "phrase": ("a vaccination clinic",),
+                "children": [
+                    {
+                        "name": "Public Health",
+                        "keywords": ("1 Public",),
+                        "info": ({
+                            "Phone": "479-549-3790",
+                            "Address": "101 W University St",
+                            "Location": "Downtown Siloam",
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("1.Public Health",),
+                    },
+                    {
+                        "name": "Panther Clinic",
+                        "keywords": ("2 Panther",),
+                        "info": ({
+                            "Phone": "479-524-8175",
+                            "Address": "1500 N Mt Olive",
+                            "Location": "In Intermediate School",
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("2.Panther Clinic",),
+                    },
+                    {
+                        "name": "Community Clinic",
+                        "keywords": ("3 Community",),
+                        "info": ({
+                            "Phone": "500 S Mt Olive",
+                            "Address": "855-438-2280",
+                            "Location": "Across from library",
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("3.Community Clinic",),
+                    },
+                ],
+            },
+        )
+    },
+    {
+        "name": "emergency",
+        "keywords": (
+            "emergency murder murdering murdered shoot shooting shot gun kill killing killed wreck crash crashed crashing trap trapped trapping kidnap kidnapped kidnapping abduct abducted abducting",
+        ),
+        "phrase": ("emergency help",),
+        "children": (
+            {
+                "name": "911",
+                "keywords": ("1 911 emergency",),
+                "info": ({
+                    "phone": "911",
+                    "address": "603 N. Progress Ave",
+                    "location": "ER across from Highschool"
+                },),
+                "isLeaf": True,
+                "phrase": ("1.emergency help",),
+            },
+            {
+                "name": "other",
+                "keywords": ("2 other",),
+                "info": ({
+                    "Other options": "try replying 'suicide' or 'abuse'",
+                },),
+                "isLeaf": True,
+                "phrase": ("2.other",),
             },
         )
     },
     {
         "name": "suicide",
-        "keywords": ("suicide kill die death slit",),
+        "keywords": ("suicide slit slitting slitted cut cutting",),
         "phrase": ("urgent help with thoughts of suicide or harm",),
         "children": (
             {
                 "name": "911",
-                "keywords": ("911 emergency",),
+                "keywords": ("1 911 emergency",),
                 "info": ({
                              "phone": "911",
                              "address": "603 N. Progress Ave",
                              "location": "ER across from Highschool"
                          },),
                 "isLeaf": True,
-                "phrase": ("emergency help",),
+                "phrase": ("1.emergency help",),
             },
             {
                 "name": "Suicide Lifeline",
-                "keywords": ("lifeline",),
+                "keywords": ("2 lifeline",),
                 "info": ({
                              "phone": "800-273-8255",
                              "hours": "24/7",
                          },),
                 "isLeaf": True,
-                "phrase": ("suicide lifeline",),
+                "phrase": ("2.suicide lifeline",),
             },
             {
                 "name": "Crisis Hotline",
-                "keywords": ("crisis hotline",),
+                "keywords": ("3 crisis hotline",),
                 "info": ({
                              "phone": "888-274-7472",
                              "hours": "M-F 8am-1am, Sat-Sun 2pm-midnight",
                          },),
                 "isLeaf": True,
-                "phrase": ("crisis hotline",),
+                "phrase": ("3.crisis hotline",),
+            },
+        )
+    },
+    {
+        "name": "domestic violence",
+        "keywords": ("domestic violence violent abuse hit hitting beat beaten beating bruise bruised bruising punch punched punchin grab grabbed",),
+        "phrase": ("urgent help with violence at home",),
+        "children": (
+            {
+                "name": "911",
+                "keywords": ("1 911 emergency",),
+                "info": ({
+                    "phone": "911",
+                    "address": "603 N. Progress Ave",
+                    "location": "ER across from Highschool"
+                },),
+                "isLeaf": True,
+                "phrase": ("1 emergency help",),
+            },
+            {
+                "name": "Domestic Abuse Hotline",
+                "keywords": ("2 hotline",),
+                "info": ({
+                    "phone": "800-799-7233",
+                    "hours": "24/7",
+                    "website": "www.thehotline.org/"
+                },),
+                "isLeaf": True,
+                "phrase": ("2 violence hotline",),
+            },
+            {
+                "name": "Child Abuse Hotline",
+                "keywords": ("3 abuse hotline",),
+                "info": ({
+                     "phone": "800-482-5964",
+                     "hours": "24/7",
+                },),
+                "isLeaf": True,
+                "phrase": ("3 child abuse hotline",),
             },
         )
     },
@@ -100,7 +248,7 @@ resources = [
                 "children": [
                     {
                         "name": "JBU Care Clinic",
-                        "keywords": ("JBU",),
+                        "keywords": ("1 JBU",),
                         "info": ({
                             "phone": "479-524-7300",
                             "address": "2125 W. University Street",
@@ -111,7 +259,7 @@ resources = [
                     },
                     {
                         "name": "Glenhaven Counseling",
-                        "keywords": ("Glenhaven",),
+                        "keywords": ("2 Glenhaven",),
                         "info": ({
                             "phone": "479-238-3950",
                             "address": "500 S. Broadway",
@@ -122,7 +270,7 @@ resources = [
                     },
                     {
                         "name": "Ozark Guidance",
-                        "keywords": ("OGC Ozark Guidance",),
+                        "keywords": ("3 OGC Ozark Guidance",),
                         "info": ({
                             "phone": "479-524-8618",
                             "address": "710 Holly Street",
@@ -165,8 +313,29 @@ resources = [
                 "phrase": ("food for children",),
                 "children": [
                     {
+                        "name": "WIC",
+                        "keywords": ("1 WIC",),
+                        "info": ({
+                            "Phone": "479-549-3790",
+                            "Address": "101 W University St",
+                            "Location": "Downtown Siloam",
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("WIC",),
+                    },
+                    {
+                        "name": "Food Stamps/SNAP",
+                        "keywords": ("1 stamps SNAP",),
+                        "info": ({
+                            "Phone": "501-682-8650",
+                            "Website": "https://www.benefits.gov/benefit/1108",
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("Food Stamps/SNAP",),
+                    },
+                    {
                         "name": "Summer Food Program",
-                        "keywords": ("Manna Center",),
+                        "keywords": ("2 summer",),
                         "info": ({
                             "Locations": "Allen Elementary 11-1, Bob Henry Park 11:30",
                             "Website": "http://www.fns.usda.gov/summerfoodrocks",
@@ -195,6 +364,143 @@ resources = [
                         "isLeaf": True,
                         "phrase": ("Only Believe Tabernacle",),
                     }
+                ]
+            },
+        )
+    },
+    {
+        "name": "housing",
+        "keywords": ("house housing evict evicted evicting",),
+        "phrase": ("housing assistance",),
+        "options": ("What kind of housing help do you need?",),
+        "children": (
+            {
+                "name": "rent/hotel assistance",
+                "keywords": ("house housing rent renting hotel motel over-night",),
+                "phrase": ("rent/hotel assistance",),
+                "children": [
+                    {
+                        "name": "Housing Authority",
+                        "keywords": ("1 authority",),
+                        "info": ({
+                            "Phone": "479-524-8117",
+                            "Address": "1255 W Tulsa",
+                            "Locations": "Near Middle School",
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("1.Housing Authority",),
+                    },
+                    {
+                        "name": "Genesis House",
+                        "keywords": ("2 Genesis",),
+                        "info": ({
+                            "Phone": "479-549-3438",
+                            "Address": "1402 N Inglewood",
+                            "Locations": "Across from Dollar General on Cheri Whitlock",
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("2.Genesis House",),
+                    },
+                ]
+            },
+            {
+                "name": "shelter",
+                "keywords": ("shelter temporary",),
+                "phrase": ("a shelter",),
+                "children": [
+                    {
+                        "name": "general shelter",
+                        "keywords": ("general",),
+                        "phrase": ("a general shelter",),
+                        "children": [
+                            {
+                                "name": "Salvation Army",
+                                "keywords": ("1 Salvation Army",),
+                                "info": ({
+                                    "Phone": "855-251-0857",
+                                    "Location": "Bentonville, Fayetteville",
+                                },),
+                                "isLeaf": True,
+                                "phrase": ("1.Salvation Army",),
+                            },
+                            {
+                                "name": "Havenwood",
+                                "keywords": ("1 Havenwood",),
+                                "info": ({
+                                    "Phone": "479-273-1060",
+                                    "For": "single parents",
+                                    "Location": "Bentonville",
+                                },),
+                                "isLeaf": True,
+                                "phrase": ("1.Havenwood",),
+                            },
+                        ]
+                    },
+                    {
+                        "name": "womens shelter",
+                        "keywords": ("women woman ladies lady",),
+                        "phrase": ("women's shelter",),
+                        "children": [
+                            {
+                                "name": "NW Womens Shelter",
+                                "keywords": ("1 NW northwest",),
+                                "info": ({
+                                    "Phone": "800-775-9011",
+                                },),
+                                "isLeaf": True,
+                                "phrase": ("1.NW Women's Shelter",),
+                            },
+                            {
+                                "name": "Restoration Village",
+                                "keywords": ("1 Restoration Restore",),
+                                "info": ({
+                                    "Phone": "479-631-7345",
+                                    "For": "women & children",
+                                    "Location": "Little Flock",
+                                },),
+                                "isLeaf": True,
+                                "phrase": ("1.Restoration Village",),
+                            },
+                            {
+                                "name": "Oasis of NWA",
+                                "keywords": ("2 NW northwest",),
+                                "info": ({
+                                    "Phone": "479-268-4340",
+                                    "For": "women & children",
+                                    "Location": "Bentonville",
+                                },),
+                                "isLeaf": True,
+                                "phrase": ("2.Oasis of NWA",),
+                            },
+                            {
+                                "name": "Hannah House",
+                                "keywords": ("3 Hannah",),
+                                "info": ({
+                                    "Phone": "479-782-5683",
+                                    "For": "young women",
+                                    "Location": "Fort Smith",
+                                },),
+                                "isLeaf": True,
+                                "phrase": ("3.Hannah House",),
+                            },
+                        ]
+                    },
+                    {
+                        "name": "mens shelter",
+                        "keywords": ("men man shelter",),
+                        "phrase": ("men shelter",),
+                        "children": [
+                            {
+                                "name": "Souls Harbor",
+                                "keywords": ("1 Soul Harbor",),
+                                "info": ({
+                                    "Phone": "479-631-7878",
+                                },),
+                                "isLeaf": True,
+                                "phrase": ("1.Soul's Harbor",),
+                            },
+                        ]
+                    },
                 ]
             },
         )

@@ -102,7 +102,6 @@ class TestChat(unittest.TestCase):
             'certainty': 1
         }
         thisChat = Chat(flatten(resources), ['fishes', 'deep sea fishes'])
-        print(thisChat.match(search_str))
         self.assertEqual(thisChat.match(search_str), res)
 
     def test_chat_match_alternative(self):
@@ -124,4 +123,36 @@ class TestChat(unittest.TestCase):
         }
 
         thisChat = Chat(flatten(resources), ['fishes', 'nothingthere'])
+        self.assertEqual(thisChat.match(search_str), res)
+
+    def test_chat_match_prefer_up_tree(self):
+        resources2 = [
+            {
+                "name": "counseling",
+                "keywords": ("counseling",),
+                "phrase": ("About counseling",),
+                "options": ("What counseling are you looking for?",),
+                "children": (
+                    {
+                        "name": "Guidance",
+                        "keywords": ("guidance",),
+                        "info": (),
+                        "isLeaf": True,
+                        "phrase": ("Guidance Service",),
+                    },
+                )
+            },
+        ]
+        search_str = 'counseling'
+        res = {
+            'count': 1,
+            'similarity': 1,
+            'value': {'subject': ('counseling',), 'keywords': (('counsel',),), 'phrase': ('About counseling',), 'options': ('What counseling are you looking for?',), 'children': ('Guidance Service',)},
+            'lastCount': 1,
+            'lastSimilarity': 1,
+            'matching': ('counsel',),
+            'certainty': 1
+        }
+
+        thisChat = Chat(flatten(resources2), ())
         self.assertEqual(thisChat.match(search_str), res)
