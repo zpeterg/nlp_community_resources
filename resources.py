@@ -241,9 +241,9 @@ resources = [
         "phrase": ("addiction or rehab help",),
         "children": (
             {
-                "name": "Adolescent Rehab",
+                "name": "Teen Rehab",
                 "keywords": ("adolescent teen",),
-                "phrase": ("an adolescent rehab",),
+                "phrase": ("a teen rehab",),
                 "children": (
                     {
                         "name": "Decision Point",
@@ -294,7 +294,7 @@ resources = [
             },
             {
                 "name": "Men Rehab",
-                "keywords": ("2 adolescent teen",),
+                "keywords": ("men",),
                 "phrase": ("a rehab for men",),
                 "children": (
                     {

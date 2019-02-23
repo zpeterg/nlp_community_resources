@@ -8,11 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="48931b6b-f097-4533-9ab1-4aec3cef3b97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleanIt.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleanIt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatten.py" beforeDir="false" afterPath="$PROJECT_DIR$/flatten.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            <state relative-caret-position="204">
+              <caret line="245" column="35" selection-start-line="245" selection-start-column="35" selection-end-line="245" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -50,8 +45,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>highscho</find>
-      <find>high</find>
       <find>resources</find>
       <find>food pantry</find>
       <find>pantry</find>
@@ -80,6 +73,8 @@
       <find>food</find>
       <find>panther</find>
       <find>community clinic</find>
+      <find>shelter</find>
+      <find>youth</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,9 +110,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="4633" />
-    <option name="width" value="814" />
-    <option name="height" value="867" />
+    <option name="x" value="215" />
+    <option name="y" value="162" />
+    <option name="width" value="780" />
+    <option name="height" value="830" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -267,7 +263,7 @@
       <workItem from="1550198932718" duration="20000" />
       <workItem from="1550199157244" duration="28319000" />
       <workItem from="1550333235040" duration="25000" />
-      <workItem from="1550720801631" duration="25345000" />
+      <workItem from="1550720801631" duration="29609000" />
     </task>
     <task id="LOCAL-00001" summary="add Chat with flattening, and begin match section">
       <created>1549166902640</created>
@@ -325,7 +321,21 @@
       <option name="project" value="LOCAL" />
       <updated>1550808893042</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add stepped resource evaluation &amp; add to resources">
+      <created>1550877460638</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1550877460638</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add rehab">
+      <created>1550894754817</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1550894754817</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -361,10 +371,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81440000" />
+    <option name="totallyTimeSpent" value="85704000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3832" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.15102828" />
@@ -402,7 +412,9 @@
     <MESSAGE value="add command-line print &amp; add check for last-match on resources" />
     <MESSAGE value="add mental-health resources and pre-flatten resources" />
     <MESSAGE value="move fragmentation to flatten &amp; strip dup child keywords" />
-    <option name="LAST_COMMIT_MESSAGE" value="move fragmentation to flatten &amp; strip dup child keywords" />
+    <MESSAGE value="add stepped resource evaluation &amp; add to resources" />
+    <MESSAGE value="add rehab" />
+    <option name="LAST_COMMIT_MESSAGE" value="add rehab" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -581,8 +593,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        <state relative-caret-position="204">
+          <caret line="245" column="35" selection-start-line="245" selection-start-column="35" selection-end-line="245" selection-end-column="35" />
         </state>
       </provider>
     </entry>
