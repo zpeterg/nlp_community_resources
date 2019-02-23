@@ -132,7 +132,7 @@ resources = [
     {
         "name": "emergency",
         "keywords": (
-            "emergency murder murdering murdered shoot shooting shot gun kill killing killed wreck crash crashed crashing trap trapped trapping kidnap kidnapped kidnapping abduct abducted abducting",
+            "hospital emergency murder murdering murdered shoot shooting shot gun kill killing killed wreck crash crashed crashing kidnap kidnapped kidnapping abduct abducted abducting",
         ),
         "phrase": ("emergency help",),
         "children": (
@@ -160,7 +160,7 @@ resources = [
     },
     {
         "name": "suicide",
-        "keywords": ("suicide slit slitting slitted cut cutting",),
+        "keywords": ("suicide slit slitting slitted cut cutting death",),
         "phrase": ("urgent help with thoughts of suicide or harm",),
         "children": (
             {
@@ -313,7 +313,7 @@ resources = [
     },
     {
         "name": "mental health",
-        "keywords": ("mental behavioral depression anxiety panic insane crazy nuts nervous breakdown",),
+        "keywords": ("mental behavioral depressed depressing depression sad grief crying anxiety panic insane crazy nuts nervous nerve breakdown",),
         "phrase": ("a mental health service",),
         "options": ("What kind of service are you needing?",),
         "children": (
@@ -428,17 +428,17 @@ resources = [
                 "children": [
                     {
                         "name": "Manna Center",
-                        "keywords": ("Manna Center",),
+                        "keywords": ("1 Manna Center",),
                         "info": ({"address": "670 Heritage Ct.", "near": "The intersection of S. Carl and W. Tulsa"},),
                         "isLeaf": True,
-                        "phrase": ("The Manna Center",),
+                        "phrase": ("1.The Manna Center",),
                     },
                     {
                         "name": "Only Believe",
-                        "keywords": ("Only Believe Tabernacle",),
+                        "keywords": ("2 Tabernacle",),
                         "info": ({"name": "Only Believe Tabernacle"},),
                         "isLeaf": True,
-                        "phrase": ("Only Believe Tabernacle",),
+                        "phrase": ("2.Only Believe Tabernacle",),
                     }
                 ]
             },
@@ -446,7 +446,7 @@ resources = [
     },
     {
         "name": "housing",
-        "keywords": ("house housing evict evicted evicting",),
+        "keywords": ("house housing evict evicted evicting place room",),
         "phrase": ("housing assistance",),
         "options": ("What kind of housing help do you need?",),
         "children": (

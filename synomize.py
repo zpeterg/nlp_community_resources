@@ -8,7 +8,10 @@ def spell_suggest(words):
     # find those words that may be misspelled
     rtn = ()
     for word in words:
+        print(words)
+        print('spell-checking ', word)
         cands = spell.candidates(word)
+        print('done')
         # always include the original word
         rtn += (word,)
         # add each candidate word, if not already there
@@ -18,10 +21,10 @@ def spell_suggest(words):
     return tuple(sorted(rtn))
 
 
-def synomize(arr):
+def synomize(arr, no_spell=True):
     rtn = ()
-
-    arr = spell_suggest(tuple(arr))
+    if not no_spell:
+        arr = spell_suggest(arr)
 
     for word in arr:
         word_set = (word,)

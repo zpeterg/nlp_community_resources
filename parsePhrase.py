@@ -9,7 +9,7 @@ def prepPhrase(phrase):
 
 def parsePhrase(arr, phrase):
     rtn = {'count': 0, 'similarity': 0, 'lastCount': 0, 'lastSimilarity': 0, 'matching': ()}
-    synomized_phrase = synomize(prepPhrase(phrase))
+    synomized_phrase = synomize(prepPhrase(phrase), True)
     last_count = 0
     last_similarity = 0
     # prep each piece of comparison array
