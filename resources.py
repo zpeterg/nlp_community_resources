@@ -236,6 +236,82 @@ resources = [
         )
     },
     {
+        "name": "rehabilitation",
+        "keywords": ("rehab rehabilitation recover recovery addict addiction addicted dependent drug alcohol beer wine liquor vodka cocaine crack meth methamphetamine marijuana",),
+        "phrase": ("addiction or rehab help",),
+        "children": (
+            {
+                "name": "Adolescent Rehab",
+                "keywords": ("adolescent teen",),
+                "phrase": ("an adolescent rehab",),
+                "children": (
+                    {
+                        "name": "Decision Point",
+                        "keywords": ("1 decision point",),
+                        "info": ({
+                            "Phone": "479-756-1060",
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("1 Decision Point",),
+                    },
+                )
+            },
+            {
+                "name": "Adult Rehab",
+                "keywords": ("adult",),
+                "phrase": ("an adult rehab",),
+                "children": (
+                    {
+                        "name": "Decision Point",
+                        "keywords": ("1 decision point",),
+                        "info": ({
+                            "Phone": "479-756-1060",
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("1 Decision Point",),
+                    },
+                    {
+                        "name": "Alcohol and Drug Detox",
+                        "keywords": ("2 detox",),
+                        "info": ({
+                            "Phone": "479-715-4957",
+                            "Location": "Fayetteville",
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("2 Alcohol and Drug Detox",),
+                    },
+                    {
+                        "name": "Decision Point",
+                        "keywords": ("2 decision point",),
+                        "info": ({
+                            "Phone": "464-1060",
+                            "Location": "Bentonville",
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("2 Alcohol and Drug Detox",),
+                    },
+                )
+            },
+            {
+                "name": "Men Rehab",
+                "keywords": ("2 adolescent teen",),
+                "phrase": ("a rehab for men",),
+                "children": (
+                    {
+                        "name": "Harbor House",
+                        "keywords": ("1 decision point",),
+                        "info": ({
+                            "Phone": "479-785-4083",
+                            "Location": "Fort Smith",
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("1.Alcohol and Drug Detox",),
+                    },
+                )
+            }
+        )
+    },
+    {
         "name": "mental health",
         "keywords": ("mental behavioral depression anxiety panic insane crazy nuts nervous breakdown",),
         "phrase": ("a mental health service",),
@@ -436,6 +512,43 @@ resources = [
                             },
                         ]
                     },
+{
+                        "name": "childrens shelter",
+                        "keywords": ("child children boy girl youth",),
+                        "phrase": ("children shelter",),
+                        "children": [
+                            {
+                                "name": "NWA Children's Shelter",
+                                "keywords": ("1 NWA",),
+                                "info": ({
+                                    "Phone": "479-795-2417",
+                                    "Location": "Bentonville",
+                                },),
+                                "isLeaf": True,
+                                "phrase": ("1.NWA Children's Shelter",),
+                            },
+                            {
+                                "name": "EOA Children's House",
+                                "keywords": ("2 EOA",),
+                                "info": ({
+                                    "Phone": "479-927-1232",
+                                    "Location": "Springdale",
+                                },),
+                                "isLeaf": True,
+                                "phrase": ("2.EOA Children's House",),
+                            },
+                            {
+                                "name": "YouthBridge",
+                                "keywords": ("3 Bridge",),
+                                "info": ({
+                                    "Phone": "479-521-1532",
+                                    "Location": "Fayetteville",
+                                },),
+                                "isLeaf": True,
+                                "phrase": ("3.Youth Bridge",),
+                            },
+                        ]
+                    },
                     {
                         "name": "womens shelter",
                         "keywords": ("women woman ladies lady",),
@@ -487,7 +600,7 @@ resources = [
                     },
                     {
                         "name": "mens shelter",
-                        "keywords": ("men man shelter",),
+                        "keywords": ("men man",),
                         "phrase": ("men shelter",),
                         "children": [
                             {
