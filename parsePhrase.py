@@ -1,15 +1,9 @@
-from fragIt import fragIt
-from cleanIt import cleanIt
-from synomize import synomize
+
 from similarity import similarity
 
 
-def prepPhrase(phrase):
-    return cleanIt(fragIt(phrase))
-
-def parsePhrase(arr, phrase):
+def parsePhrase(arr, synomized_phrase):
     rtn = {'count': 0, 'similarity': 0, 'lastCount': 0, 'lastSimilarity': 0, 'matching': ()}
-    synomized_phrase = synomize(prepPhrase(phrase), True)
     last_count = 0
     last_similarity = 0
     # prep each piece of comparison array

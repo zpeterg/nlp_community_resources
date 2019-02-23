@@ -1,11 +1,19 @@
 from parsePhrase import parsePhrase
+from fragIt import fragIt
+from cleanIt import cleanIt
+from synomize import synomize
+
+def prepPhrase(phrase):
+    return cleanIt(fragIt(phrase))
 
 def match_to_list(tup, search_str):
     highest_similarity = {'similarity': 0, 'count': 0, 'lastCount': 0, 'lastSimilarity': 0, 'matching': ()}
     highest_similarity_item = tup[0]
+    synomized_phrase = synomize(prepPhrase(search_str))
+
     for item in tup:
         # parsePhrase() returns something like {'count': 2, 'similarity': 3, 'lastCount': 0, 'lastSimilarity': 0}
-        sim = parsePhrase(item['keywords'], search_str)
+        sim = parsePhrase(item['keywords'], synomized_phrase)
         # only count as highest similarity if has highest match, AND matches on the last item
         if highest_similarity['count'] < sim['count'] and sim['lastCount'] > 0:
             highest_similarity_item = item

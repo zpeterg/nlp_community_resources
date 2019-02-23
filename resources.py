@@ -436,9 +436,24 @@ resources = [
                     {
                         "name": "Only Believe",
                         "keywords": ("2 Tabernacle",),
-                        "info": ({"name": "Only Believe Tabernacle"},),
+                        "info": ({
+                            "Phone": "479-790-3678",
+                            "Address": "1700 A South Pointe",
+                            "Location": "Off of 59 south of 412",
+                        },),
                         "isLeaf": True,
                         "phrase": ("2.Only Believe Tabernacle",),
+                    },
+                    {
+                        "name": "Hunger and Thirst Ministries",
+                        "keywords": ("3 thirst ministry",),
+                        "info": ({
+                            "Phone": "479-373-6220",
+                            "Address": "3298 E Kenwood St",
+                            "Location": "Off of 16 south of 412",
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("3.Hunger & Thirst",),
                     }
                 ]
             },
@@ -514,8 +529,8 @@ resources = [
                     },
 {
                         "name": "childrens shelter",
-                        "keywords": ("child children boy girl youth",),
-                        "phrase": ("children shelter",),
+                        "keywords": ("child children boy girl youth baby",),
+                        "phrase": ("children's shelter",),
                         "children": [
                             {
                                 "name": "NWA Children's Shelter",
@@ -615,6 +630,91 @@ resources = [
                         ]
                     },
                 ]
+            },
+        )
+    },
+    {
+        "name": "clothing",
+        "keywords": ("clothes clothing shirt pants shoe sock coat jacket hat underwear panties bra",),
+        "phrase": ("help with clothing",),
+        "options": ("What kind are you looking for?",),
+        "children": (
+            {
+                "name": "child clothing",
+                "keywords": ("child children boy girl youth baby infant toddler",),
+                "phrase": ("child clothing",),
+                "children": [
+                    {
+                        "name": "BrightFutures",
+                        "keywords": ("1 Bright Futures Future",),
+                        "info": ({
+                            "Phone": "479-524-8175",
+                            "Address": "1500 N Mt Olive",
+                            "Location": "In Intermediate School",
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("1.Bright Futures",),
+                    },
+                    {
+                        "name": "Potter's House",
+                        "keywords": ("2 Potter",),
+                        "info": ({
+                                    "Phone": "479-373-6373",
+                                    "Address": "2101 US-412",
+                                    "Location": "Across from 2B's Auto",
+                                    "For": "all ages"
+                        },),
+                        "isLeaf": True,
+                        "phrase": ("2.Potter's House",),
+                    },
+                ]
+            },
+            {
+                "name": "adult clothing",
+                "keywords": ("adult man woman lady old",),
+                "phrase": ("adult clothing",),
+                "children": [
+                    {
+                        "name": "Potter's House",
+                        "keywords": ("1 Potter",),
+                        "info": ({
+                                     "Phone": "479-373-6373",
+                                     "Address": "2101 US-412",
+                                     "Location": "Across from 2B's Auto",
+                                 },),
+                        "isLeaf": True,
+                        "phrase": ("1.Potter's House",),
+                    },
+                ]
+            },
+        )
+    },
+    {
+        "name": "jobs",
+        "keywords": ("job work career employ employment employed fired laid",),
+        "phrase": ("help finding a job",),
+        "children": (
+            {
+                "name": "Genesis House",
+                "keywords": ("1 Genesis",),
+                "info": ({
+                    "Phone": "479-549-3438",
+                    "Address": "1402 N Inglewood",
+                    "Locations": "Across from Dollar General on Cheri Whitlock",
+                },),
+                "isLeaf": True,
+                "phrase": ("1.Genesis House",),
+            },
+            {
+                "name": "Goodwill",
+                "keywords": ("2 Goodwill",),
+                "info": ({
+                     "Phone": "479-373-6137",
+                     "Address": "1001 S Mt Olive St",
+                     "Location": "Corner of 412 & Mt Olive",
+                },),
+                "isLeaf": True,
+                "phrase": ("2.Goodwill",),
             },
         )
     },
